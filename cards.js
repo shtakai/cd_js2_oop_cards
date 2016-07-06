@@ -122,7 +122,7 @@ function Game(name, dealer, players){
 
 }
 
-Game.prototype.initialize = function(){
+Game.prototype.game = function(){
   // NOTE: there're 2 players, no dealer
   this.deck_ = new Deck();
   this.deck_.shuffle();
@@ -231,4 +231,4 @@ var dealer = new Player('dealer');
 
 // var game = new Game('game', dealer, []);
 var game = new Game('game', dealer, [p1, p2]);
-game.initialize();
+game.game();
